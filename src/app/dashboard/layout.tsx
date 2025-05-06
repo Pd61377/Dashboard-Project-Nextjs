@@ -3,16 +3,16 @@ import { inter } from '@/app/ui/fonts';
 import { Metadata } from 'next';
  
 export const metadata: Metadata = {
-  title: 'Acme Dashboard',
-  description: 'The official Next.js Course Dashboard, built with App Router.',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+  title: 'Dashboard',
+  description: 'Dashboard Page',
+  
 };
  
-export default function RootLayout({
+export default function DashboardLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: {{
+  children: React.ReactNode
+}}) {
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>{children}</body>
