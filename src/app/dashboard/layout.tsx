@@ -1,18 +1,16 @@
-import '@/app/globals.css';
-import { inter } from '@/app/ui/fonts';
-import { Metadata } from 'next';
- 
-export const metadata: Metadata = {
-  title: 'Dashboard',
-  description: 'Dashboard Page',
-  
-};
- 
+import React from 'react';
+import { inter } from '../ui/fonts';
+
+// export const inter = Inter({ subsets: ['latin'] });
+
+
+
 export default function DashboardLayout({
   children,
-}: {{
-  children: React.ReactNode
-}}) {
+}: {
+  children: React.ReactNode;
+}) {
+
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>{children}</body>
